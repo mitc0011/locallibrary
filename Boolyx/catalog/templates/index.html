@@ -1,0 +1,43 @@
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Sheet Happens - en ebogsservice</h1>
+<div>
+    {% load static %}
+    <center>
+	<img src="{% static "images/SheetHappens.png" %}" alt="My image" style="width:500px;height:500px;"/>
+    </center>
+</div>  
+<p>
+Sheet Happens er et nyopstartet online katalog, hvis formål er at levere licensfrie ebøger til flere mennesker.
+<br>At læse skønlitteratur hos Sheet Happens er ment til altid at være problemfrit og gratis.
+<br>Vores vision er at tilbyde mange forskellige kategorier af skønlitteratur gratis til et bredt publikum.
+<br>Dertil tilstræbes det også at udvide kataloget med en tilkøb sektion af tekniske materiale i form af datablade, brugermanualer og anden faglitteratur.
+<br>På nuværende tidspunkt er Sheet Happens ment som et eksamensprojekt, der skal demonsterer forståelse for python programmering, server, netværk og it-sikkerhed.
+</p>
+<p>
+Det kan ske, at projektet bliver videreudviklet på sigt, men...
+<br>Sheet Happens, you know.
+</p>
+</p>
+<h2>Teamet bag:</h2>
+<p>Philip Bretlau Spect, Lasse Heidner Nielsen og Mitchell Jakobssen Ly, Juni 2022</p>
+<center>
+<div>
+    <img src="{% static "images/holdet_rpi.jpg" %}" alt="Holdet" style"width:400px; height:200px"/>
+</div>
+</center>
+
+<h2>Dynamic content</h2>
+
+<p>Statistik</p>
+<ul>
+<li><strong>Bøger:</strong> {{ num_books }}</li>
+<li><strong>Forfattere:</strong> {{ num_authors }}</li>
+</ul>
+
+
+Antal gange besøgt {{ num_visits }}.
+
+{% endblock %}

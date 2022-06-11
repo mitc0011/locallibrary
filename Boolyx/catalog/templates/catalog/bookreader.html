@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Book: {{ book.title }} </h1>
+    <div style="margin-left:20px;margin-top:20px">
+        <div class="book">
+            <embed src="{{books.bookfile.url}}" type = "application/PDF" width="1000px" height="800">
+            </embed>
+        </div>
+            
+
+    </div>
+{% endblock %}
+
